@@ -1,0 +1,49 @@
+$font: "Poppins", sans-serif;
+$primary-color: #2596be;
+$secondary-color: #145369;
+
+body {
+  padding-top: 65px;
+  font-family: $font;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
+    color: $primary-color;
+
+    .canvas-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+
+      .img-canvas {
+        border: 5px solid $secondary-color;
+      }
+    }
+
+    .input-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      max-width: 70%;
+
+      .form-group {
+        width: 90%;
+        display: block;
+      }
+
+      #playAgain,
+      #startButton {
+        background-color: $secondary-color;
+        color: white;
+      }
+    }
+  }
+}
